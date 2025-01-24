@@ -42,7 +42,7 @@ This README provides an overview of how to run and use the project, including se
 ### Prerequisites
 
 Before getting started, make sure you have the following installed:
-- **Node.js** (for the frontend)
+- **React.js** (for the frontend)
 - **npm** or **yarn** (for frontend dependency management)
 - **Python** (for the backend)
 - **MongoDB** (either locally or using a cloud service like MongoDB Atlas)
