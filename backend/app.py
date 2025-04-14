@@ -6,7 +6,11 @@ from db import stories_collection
 
 load_dotenv()
 app = Flask(__name__)
-CORS(app) 
+CORS(app, 
+    origins=["https://vespera-ai.vercel.app/"],
+    methods=["GET", "POST"],
+    allow_headers=["Content-Type", "Authorization"])
+
 
 client = Client()
 
