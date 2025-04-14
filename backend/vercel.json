@@ -2,18 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/generate_story",
+      "methods": ["POST"],
+      "dest": "api/index.py"
     }
   ],
   "functions": {
-    "**": {
+    "api/index.py": {
       "maxDuration": 30
     }
   }
