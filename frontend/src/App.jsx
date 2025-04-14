@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar';
 import GenerateStory from './components/GenerateStory';
 import ViewStories from './components/ViewStories';
 import HowToUse from './components/HowToUse';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 function App() {

@@ -1,31 +1,14 @@
-import datetime
-from math import ceil
-import os
 from flask import Flask, request, jsonify
 from g4f.client import Client
-from pymongo import MongoClient
 from dotenv import load_dotenv
 from flask_cors import CORS
-from bson import ObjectId
-from datetime import datetime
+from db import stories_collection 
 
 load_dotenv()
 app = Flask(__name__)
 CORS(app) 
 
 client = Client()
-
-# MongoDB connection
-DATABASE_URI = os.getenv("DATABASE_URI")
-try:
-    mongo_client = MongoClient(DATABASE_URI)
-    db = mongo_client["storydb"]
-    stories_collection = db["stories"]
-    mongo_client.server_info()
-    print("Successfully connected to MongoDB")
-except Exception as e:
-    print(f"Failed to connect to MongoDB: {str(e)}")
-
 
 # Home route
 @app.route('/')

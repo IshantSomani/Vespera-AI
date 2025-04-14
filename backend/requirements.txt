@@ -5,14 +5,16 @@ attrs==24.3.0
 blinker==1.9.0
 Brotli==1.1.0
 certifi==2024.12.14
+cffi==1.17.1
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
+curl_cffi==0.10.0
 dnspython==2.7.0
 Flask==3.1.0
 Flask-Cors==5.0.0
 frozenlist==1.5.0
-g4f==0.4.0.6
+g4f==0.5.0.4
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.5
@@ -20,6 +22,7 @@ MarkupSafe==3.0.2
 multidict==6.1.0
 nest-asyncio==1.6.0
 propcache==0.2.1
+pycparser==2.22
 pycryptodome==3.21.0
 pymongo==4.10.1
 python-dotenv==1.0.1

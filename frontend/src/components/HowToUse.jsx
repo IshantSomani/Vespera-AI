@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { FiBookOpen, FiSave, FiEye, FiInfo, FiStar } from 'react-icons/fi';
 import { RiMagicLine, RiLightbulbFlashLine } from 'react-icons/ri';
 

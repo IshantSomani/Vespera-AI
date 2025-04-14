@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FiHome, FiBook, FiHelpCircle, FiChevronRight } from "react-icons/fi";
 import { RiLightbulbFlashLine } from "react-icons/ri";
 import { useState } from "react";
